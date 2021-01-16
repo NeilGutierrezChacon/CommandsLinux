@@ -61,7 +61,43 @@ Programas que procesan texto y emiten el resultado.
 
 - head -n [numero de lineas] [archivo] -> Tambien podemos escoger cuantas lineas queremos visualizar.
 
+### cat [archivo]
 
+Muestra el contenido completo de un archivo.
+
+> cat texto.txt
+
+### head [opcion][archivo]
+
+Nos muestra las primeras lineas de un archivo, por defecto nos muestras las primeras 10 lineas.
+
+> head -n 5 texto.txt
+
+La opcion "-n 5" nos permite especificar el numero de lineas que quemos mostrar.
+
+### tail [option][archivo]
+
+Nos muestra las ultimas lineas de un archivo, por defecto nos muestra las primearas 10 lineas.
+
+----
+
+### sed
+
+Screem Editor, tratamiento de flujos de caracteres. Este comando nos permite reemplazar una expresión por otra.
+
+> sed ‘s/hanks/selleck/g’ dump1.sql 
+
+El subcomando "s/", significa sustituir y el /g, significa global(en todo el archivo), donde seria "s/[viejo texto][nuevo texto]/g".
+ 
+"SED no modifica el archivo, lo que hace es crear un nuevo flujo con la modificación."
+
+### awk 
+
+Trataminento de texto delimitado, este comando sirve para trabajar con archivos de textos delimitados por comas.
+
+Sirve muy bien para trabajar con textos estructirados como .csv, etc.
+
+> awk -F ‘;’ ‘{ print $1}’ nuevasPelis.csv
 
 
 ## Como programar comandos
