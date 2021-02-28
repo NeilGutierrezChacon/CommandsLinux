@@ -21,6 +21,8 @@
 
 - rmdir [directorio a eliminar] -> Borra un directorio (Tiene que estar basio).
 
+- touch [nombre del archivo] -> Sirve para crear un archivo.
+
 > Todos los directorios contiene los archivos . y .., estos son punteros a directorios.
 
 
@@ -43,6 +45,20 @@ Lista los elementos de la ruta indicada, por defecto lista el directorio actual.
 - ls -R -> Muestra los elementos de los subdirectorios de forma recursiva.
 
 - ls -S -> Ordena los resultados por tamaño de archivo.
+
+### mv
+
+> También sirve para renombrar archivos o directorios.
+
+### touch
+
+> Puede ser utilizado para cambiar la fecha de creación de un archivo.
+
+### cd
+
+> Al utilizar solamente el comando cd nos dirigira al directorio "home".
+
+> Al añadirle "-" al comando nos dirige al directorio previo en el que estabamos.
 
 ## Editores de texto
 
